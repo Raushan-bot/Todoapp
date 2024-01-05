@@ -86,3 +86,9 @@ let editTask= (e)=>{
     discription.value= selectedtask.children[2].innerText;
     deleteTask(e);
 }
+// we have to load the added task imediately after brower loading for that we have to make a method imediately invoked function iife
+( () => {
+    task= JSON.parse( localStorage.getItem("Task"))||[];
+    console.log(task);
+    showtask();
+})();
