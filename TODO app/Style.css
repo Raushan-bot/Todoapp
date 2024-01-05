@@ -1,0 +1,60 @@
+body{
+    margin: 0px 50Px;
+    background-color: rgb(136, 136, 136);
+    /* color: grey; */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.app{
+    background-color: rgb(223, 217, 246);
+    width: 300px;
+    height: 500px;
+    border: solid 5px rgb(171, 171, 171);
+    border-radius: 10px;
+    padding: 15px;
+}
+#addnew{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(192, 210, 184);
+    cursor: pointer;
+ }
+.bi-plus-circle-dotted{
+    background-color: #a3ce97;
+    padding: 3px;
+    border-radius: 5px;
+}
+#msg{
+    color: red;
+    font-size: 10px;
+}
+#tasks{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+#tasks div{
+    border: 3px solid #abcea1;
+    background-color: #e2eede;
+    border-radius: 6px;
+    padding: 5px;
+    display: grid;
+    gap: 4px;
+
+}
+#tasks div #option{
+    display: flex;
+    justify-self: center;
+    gap: 20px;
+}
+#tasks div #option i{
+    cursor: pointer;
+}
